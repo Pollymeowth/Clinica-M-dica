@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro','sans-serif';
+}
+/* COMUNS */
+.container{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+.container-titulo h2, .container-titulo h3 {
+    margin: 0;
+}
+/* HEADER */
+header, footer{
+    width: 100%;
+    background-color: #00cad1;
+}
+header .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+    gap: 5px;
+    
+}
+.topo-logo {
+    height: 60px;
+}
+.top-links{
+    padding: 10px 25px;
+    
+}
+.top-link{
+    padding: 40px 20px 0;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* MAIN */
+main{
+    color: #0000008c;
+    margin-bottom: 60px;
+}
+.box-general-vision{
+    height: 500px;
+    width: 100%;
+    background-image: url(assets/recepcao.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.box-general-vision-title{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 10px;
+    height: 100%;
+}
+h1{
+    font-size: 48px;
+}
+.container-title{
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 50px;
+    text-align: center;
+}
+.container-title h2{
+    font-size: 28px;
+}
+.container-title p{
+    margin-top: 30px;
+    font-size: 18px;
+}
+.box-sobre{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 25px;
+}
+h3{
+    font-size: 20px;
+    margin: 10px 0;
+    ;
+}
+.box-sobre ul{
+    padding: 15px;
+}
+li{
+    font-size: 16px;
+    line-height: 30px;
+}
+.container-title h3{
+    font-size: 22px;
+}
+.box-especialidades{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    gap: 10px;
+    justify-content: space-between;
+}
+.box-especialidade{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 20px 1px gray;
+}
+.box-especialidade img{
+    width:300px;
+}
+.box-especialidade figcaption{
+    font-size: 18px;
+    font-weight: 400;
+    padding: 10px;
+}
+.box-link-horario{
+    background-color: #00cad1;
+    padding: 10px;
+    width: 150px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 50px auto;
+    box-shadow: 1px 1px 10px 1px gray;
+
+}
+.link-horario{
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+}
+/* x */
+.container-rota{
+    margin: 20px 0;
+}
+/* FOOTER */
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+}
+/* 
+MEDIA QUERIES NAO CONSEGUI FAZER */
+/* ~~~~~~~~~~~~~~~~INICIO~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media (max-width:425px){
+    .top-links{font-size: 12px;}
+    .box-general-vision{height: 200px;}
+     h1{font-size:28px;}
+    .box-sobre img{display: none;}
+    .box-especialidades{width: 100%;}
+
+}
+/* ~~~~~~~~~~~~~~~INICIO~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media (max-width:768px){
+    header .container, .box-especialidades{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        flex: 1 1 auto;
+        gap: 10px;
+    }
+    .box-general-vision{height: 300px;}
+     h1{font-size:30px;}  
+    .top-links{
+        border-top: 2px solid #6e9bb9;
+        width: 90%;
+        text-align: center;
+        justify-content: space-between;
+    }
+    .top-links a{font-size: 18px;}
+    .box-sobre img{display: none}
+    .box-sobre{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .box-especialidades{justify-content: center;}
+   
+}
+/* ~~~~~~~~~~~~~INICIO~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media (max-width:1024px){
+    .box-general-vision{
+        height: 400px;
+    }
+    .box-especialidades{
+        justify-content: center;
+    }
+}
